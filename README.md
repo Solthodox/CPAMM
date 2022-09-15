@@ -40,3 +40,8 @@ y - xy / (x + dx) = dy
 (yx + ydx - xy) / (x + dx) = dy
 ydx / (x + dx) = dy
 ```
+Now it would look like this :
+
+```shell
+ydx / (x + dx) = dy
+```
