@@ -26,3 +26,17 @@ dy = 3000 - 2142.5
 dy = 857
 ```
 The trader gets 857 tokens.
+
+## Aproaching it in Solidity
+
+As Solidity is a limited programming language(it can't handle decimals) and we want our code to be as short as possible we refactor the equation to make it more efficient and code it in a single line:
+
+```shell
+xy = k
+(x + dx)(y - dy) = k
+y - dy = k / (x + dx)
+y - k / (x + dx) = dy
+y - xy / (x + dx) = dy
+(yx + ydx - xy) / (x + dx) = dy
+ydx / (x + dx) = dy
+```
